@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<body>
+    <div id="main">
+		<ul>
+			<li>
+				<span class="keyA">A</span>
+				<div class="keyA"></div>
+			</li>
+			<li>
+				<span class="keyS">S</span>
+				<div class="keyS"></div>
+			</li>
+			<li>
+				<span class="keyD">D</span>
+				<div class="keyD"></div>
+			</li>
+			<li>
+				<span class="keyJ">J</span>
+				<div class="keyJ"></div>
+			</li>
+			<li>
+				<span class="keyK">K</span>
+				<div class="keyK"></div>
+			</li>
+			<li>
+				<span class="keyL">L</span>
+				<div class="keyL"></div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
+<script src="./assets/js/jquery.min.js"></script>
+<script>
+ 
+    var keyNum = [65,83,68,74,75,76]
+    var keys = ['keyA','keyS','keyD','keyJ','keyK','keyL']
+
+    $(document).keydown(function(e){
+        for(var i=0;i<keyNum.length;i++)
+        {
+            if(e.keyCode == keyNum[i])
+            {
+                $(`span.${keys[i]}`).stop().animate({opacity:1},300)
+            }
+        }
+    })
+</script>

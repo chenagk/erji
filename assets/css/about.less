@@ -1,0 +1,359 @@
+// banner
+#carousel-example-generic{
+    
+    .carousel-inner{
+        display:flex;
+        justify-content: space-between;
+        .carousel-caption{
+            padding-bottom: 300px;
+            h1{
+                font-size: 3em;
+                color:white;
+                letter-spacing: 3px;
+                font-weight: bold;
+            }
+            h3{
+                font-size:2em;
+                color:white;
+                font-weight: bold;
+            }
+            a{
+                font-size:2.5em;
+                color:white;
+                border:1px solid white;
+                padding:.1em .2em;
+            }
+        }
+    }
+
+    @media screen and (max-width:841px){
+        &{
+            .carousel-inner{
+
+                .carousel-caption{
+                    padding-bottom: 50px;
+                }
+            }
+        }
+    }
+}
+
+//盆栽日记
+.potted{
+    background-color: #fff;
+    padding:5em 0em 2em;
+    .container{
+
+        .subject{
+            text-align: center;
+            padding-bottom: 1.5em;
+            margin-bottom: 3em;
+
+            .title{
+                font-size:2.5em;
+                font-weight:bold;
+            }
+
+            span{
+                font-size: 1.7em;
+            }
+        }
+
+        .list{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom:4em;
+
+            .item{
+                border:3px solid #f1f1f1;
+                padding:2em 2em;
+                width:20%;
+                text-align: center;
+
+                .thumb{
+                
+                    border-radius: 100%;
+                    overflow:hidden;
+                    margin-bottom:1.5em;
+
+                    img{
+                  
+                        width:150px;
+                        height:150px;
+                        border:3px solid #e5e5e5;
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+
+        .content{
+            .name{
+                font-size:1.3em;
+            }
+
+            .info{
+                margin-top:2em;
+            }
+        }
+    }
+
+    @media screen and (max-width:1000px){
+        .container{
+                .list{
+                    flex-wrap: wrap;
+    
+                     .item{
+                        width:100%;
+                        display:flex;
+                        justify-content: space-between;
+                     
+    
+                        .thumb{
+                            width:100%;
+                            border-radius:100%;
+                            margin-bottom:0;
+    
+                            img{
+                                width:120px;
+                                height:120px;
+                            }
+                        
+                        }
+    
+                       
+                    }
+                }
+            }
+        }
+}
+
+// 赋予生活
+.endow{
+    .container{
+
+        .bg{
+            background-image: url(../images/fuyu.jpg);
+            background-size: cover;
+            width:100%;
+            height:500px;
+
+            .box{
+                text-align: center;
+                
+                .one{
+                    top:3em;
+                    left:3em;
+                    font-size:2.5em;
+                    font-weight: bold;
+                    color:green;
+                }
+                .two{
+                    font-size:5em;
+                    font-weight: bold;
+                    color:#fff;
+                    letter-spacing:10px;
+                }
+                .three{
+                    color:#fff;
+                    font-size:1em;
+                }
+                a{
+                    border:1px solid #859a8f;
+                    color:#fff;
+                    margin:1em auto;
+                    padding:1em 1em;
+                }
+            }
+        }
+        
+    }
+
+    @media screen and (max-width:1000px){
+        &{
+            .container{
+                .box{
+                    margin:-3em -1em;;
+                    span{
+                        font-size:1em;
+                    }
+                    h1{
+                        font-size: 1em;
+                    }
+                    p{
+                        font-size:1em;
+                    }
+                    a{
+                        font-size:1em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 公司新闻
+.news{
+    .container{
+        margin:3em auto;
+        .title{
+            text-align: center;
+            justify-content: space-around;
+
+            h1{
+                font-size:3em;
+            }
+            span{
+                font-size:1.5em;
+            }
+        }
+        .box{
+            display: flex;
+            .left{
+  
+                width:100%;
+                img{
+                    margin:2em auto;
+                    width:80%;
+                    // height:80%;
+                }
+            }
+
+            .right{
+                margin:2em auto;
+                width:600px;
+                white-space:wrap;
+       
+            }
+        }
+    }
+
+    @media screen and (max-width:664px){
+        &{
+            .container{
+            
+                .box{
+                  
+                    .left{
+                       
+                    }
+                    .right{
+                        
+                    }
+                }
+            }
+        }   
+    }   
+}
+
+//联系我们
+.contact{
+    .container{
+        .bg{
+            background-image: url(../images/contact.jpg);
+            background-size: cover;
+            width:100%;
+            height:50vh;
+
+            .box{
+                // width:55%;
+                // position: absolute;
+                // top:25%;
+                // left:25%;
+                text-align:center;
+
+
+                .one{
+                    margin:2em auto;
+                    color:white;
+                    h1{
+                        font-size:3em;
+                        letter-spacing: 20px;
+                    }
+
+                    span{
+                        font-size:2em;
+                    }
+                
+                }
+
+                .two{
+                    // margin:3em auto;
+                    display: flex;
+                    justify-content: center;
+                    width:100%;
+                    li{
+                        margin:auto 1em;
+                        list-style: none;
+
+                    }
+                    a{
+                    font-size:1.5em;
+                    padding:auto 7em;
+                    
+                    }
+                    
+                }
+
+                .three{
+                    margin:4em auto;
+                    font-size:1.5em;
+                }
+
+               }       }
+}   
+
+    @media screen and (max-width:1000px){
+        &{
+            .container{
+                .box{
+                    text-align: center;
+                    .one{
+                        h1{
+                            font-size:1.5em;
+                        }
+
+                        span{
+                            font-size:1.5em;
+                        }
+                    }
+                    .two{
+                        
+                        li{
+                            a{
+                                font-size:.4em;
+                                white-space: nowrap;
+                            }
+                        }
+                        
+                    }
+                    
+                    .three{
+                        font-size:1em;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:800px){
+        &{
+            .container{
+                .bg{
+                    .box{
+                        .two{
+                            li{
+                                font-size:.7em;
+                            }
+                        }
+                        .three{
+                            font-size:.7em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

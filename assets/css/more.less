@@ -1,0 +1,576 @@
+// 头部
+//header
+.header{
+    // position: fixed;
+    // background-color:#111111;
+    background-color:#2d2d2d;;
+    padding:1em 0em;
+    position: sticky;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:100000;
+
+    transition:all linear .4s;
+
+    .navbar{
+        background-color:transparent;
+        border:0px;
+        border-radius: 0px;
+        margin: 0;
+
+
+        .navbar-brand{
+            background-color:transparent;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size:2em;
+
+            img{
+                width:125px;
+                margin:-1em auto;
+            }
+            a:hover{
+                color:#042957;
+            }
+            
+        }
+
+        .nav{
+            background-color:transparent;
+            a{
+                color:#f2c0b7;
+                font-size:1.5em;
+                text-transform: uppercase;
+                border-bottom:3px solid transparent;
+                transition:all linear .3s;
+
+                &:hover{
+                    border-bottom:3px solid #f9bcaf;
+                    color:skyblue;
+                }
+            }
+        }
+    }
+ 
+
+    @media screen and (max-width:768px){
+        &{
+            // opacity: .3;
+            .navbar{
+                .nav{
+                    a{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        
+    }
+    
+}
+
+.banner{
+    
+    .container{
+        padding-left:0;
+        padding-right:0;
+        width:100%; 
+        position: relative;
+
+        img{
+            
+            width:100%;
+        }
+      
+        .content{
+            width:55%;
+            position: absolute;
+            top:25%;
+            left:22%;
+            text-align:center;
+            
+            .text1{
+                h1{
+                    font-size:3em;
+                    color:white;
+                }
+                p{
+                    font-size:1.7em;
+                    color: white;
+                    opacity: .5;
+                }
+            }
+
+            .text2{
+                position: relative;
+                input{
+                    border-radius: 25px;
+                    padding:1em 1em;
+                    width:450px;
+                }
+                button{
+                    position: absolute;
+                    top:-3px;
+                    left:36em;
+                    border-radius: 25px;
+                    padding:1em 3em;
+                    background-color: #4c92d0;
+                    color:white;
+                }
+                
+            }
+
+        }
+    }
+    
+    @media screen and(max-width:1196px){
+        &{
+            .container{
+                .content{
+                    .text2{
+                        display: flex;
+                        button{
+                            white-space: nowrap;
+                            margin:auto -8em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:800px){
+        &{
+            .container{
+                .content{
+                    .text1{
+                        h1{
+                            font-size: 1em;
+                        }
+                        p{
+                            font-size:.5em;
+                        }
+                    }
+
+                    .text2{
+                        display: flex;
+                        margin:auto 5em;
+                       input{
+                           width:250px;
+                           padding:.5em .5em;
+                       }
+                       button{
+                           margin:auto -22em;
+                            white-space: nowrap;
+                            padding:.5em .5em;
+                            background-color: #4c92d0;
+                       }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:540px){
+        &{
+            .container{
+                .content{
+                    .text1{
+
+                    }
+                    .text2{
+                        input{
+                            margin:auto -2em;
+                        }
+                        button{
+                           margin:3em -34em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+   
+
+}
+
+// 模块名称
+.block{
+    .container{
+        margin:6em auto;
+        .title{
+            text-align: center;
+            margin:2em auto;
+            h1{
+                color:#4c92d0;
+                font-size:1.5em;
+            }
+            p{
+                color:#4c92d0;
+                font-size:1em;
+            }
+        }
+
+        .box{
+            display: flex;
+            justify-content: space-between;
+
+            .left{
+                position: relative;
+                width:47%;
+                .one{
+                    position: absolute;
+                    top:3em;
+                    left:3em;
+
+                    h1{
+                        font-size:1.5em;
+                        color: white;
+                    }
+                    p{
+                        font-size:1.2em;
+                        margin:2em auto;
+                        color:white;
+                    }
+                    a{
+                        margin:0em auto;
+                        color:black;
+                        background-color: white;
+                        font-size: 1.5em;
+                        padding:.2em 1em;
+                        border-radius: 25px;
+                    }
+                }
+            }
+
+            .right{
+                position: relative;
+                width:47%;
+
+                .two{
+                    position: absolute;
+                    top:3em;
+                    left:3em;
+
+                    h1{
+                        font-size:1.5em;
+                        color: white;
+                    }
+                    p{
+                        font-size:1.2em;
+                        margin:2em auto;
+                        color:white;
+                    }
+                    a{
+                        margin:0em auto;
+                        color:black;
+                        background-color: white;
+                        font-size: 1.5em;
+                        padding:.2em 1em;
+                        border-radius: 25px;
+                    }
+
+                }
+            }
+        }
+    }
+    @media screen and (max-width:998px){
+        &{
+            // .block .container .box .right
+            .container{
+                .box{
+                   flex-wrap: wrap;
+                   text-align: center;
+
+                   .left{
+                       width:100%;
+                   }
+                   
+                   .right{
+                       width:100%;
+                       margin:3em auto;
+                   }
+                }
+            }
+        }
+    }
+}
+
+//视频部分
+.video{
+    .container{
+        margin:3em auto;
+        .bg{
+            width:100%;
+            height:461px;
+            background-image: url(../images/video.png);
+
+        }
+
+        .box{
+            
+
+            .left{
+                margin:-24em 11em;
+               
+                
+            }
+
+            .right{
+
+                width:450px;
+                margin:6em 44em;
+                h1{
+                    font-size:2em;
+                }
+                p{
+                    font-size:1.5em;
+                }
+                
+                a{
+                    margin:1em auto;
+                    padding:1em 1em;
+                    background-color: white;
+                    color:black;
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:1206px){
+        &{
+            .container{
+                .box{
+                    margin:auto -11em;
+                    
+                   
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:993px){
+        &{
+            .container{
+                .box{
+                    .left{
+                        video{
+                            margin:0em 4em;
+                            width:200px;
+                            height:180px;
+                        }
+                    }
+                    .right{
+                        margin:12em 34em;
+                        width:300px;
+                        height:100px;
+                        h1{
+                            font-size:1.2em;
+                        }
+                        p{
+                            font-size:.7em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:700px){
+        &{
+            .container{
+                .box{
+                    .left{
+                        video{
+                           margin:-6em 4em;
+                        }
+                    }
+                    .right{
+                        margin:32em 15em;
+                        width:300px;
+                        height:100px;
+                        h1{
+                            font-size:1.2em;
+                        }
+                        p{
+                            font-size:.7em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+
+// 张三顺
+.san{
+    color:black;
+    padding:5em 0em 2em;
+    margin:3em auto;
+
+    .subject{
+        text-align: center;
+        
+        padding-bottom: 1.5em;
+        margin-bottom: 3em;
+        .title{
+            font-size:1.5em;
+            color:#4c92d0;
+            margin-bottom: 1em;
+           
+        }
+    }
+
+    .list{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom:4em;
+    
+        .item{
+        
+            width:20%;
+            text-align: center;
+    
+            .thumb{
+                
+                border-radius: 100%;
+                overflow:hidden;
+                margin-bottom:1.5em;
+    
+                img{
+                  
+                    width:150px;
+                    height:150px;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+
+    .content{
+        .name{
+            font-size:1.3em;
+        }
+
+        .job{
+            display: inline-block;
+            font-size:1.1em;
+            margin-bottom:1em;
+        }
+
+        .info{
+            margin-top:2em;
+        }
+    }
+    @media screen and (max-width:600px){
+    .container{
+            .list{
+                flex-wrap: wrap;
+
+                 .item{
+                    width:100%;
+                    display:flex;
+                    justify-content: space-between;
+                 
+
+                    .thumb{
+                        width:100%;
+                        border-radius:100%;
+                        margin-bottom:2em;
+
+                        img{
+                            width:120px;
+                            height:120px;
+                        }
+                    
+                    }
+
+                    .content{
+                        margin:1em 4em;
+                        h5{
+                            white-space: nowrap;
+                        }
+                        p{
+                            white-space: nowrap;
+                        }
+                    }
+
+                   
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:702px){
+        &{
+            .container{
+                margin:-29em auto;
+               
+            }
+        }
+    }
+}
+
+// footer
+.foot{
+    .container{
+       .box{
+           display: flex;
+           justify-content: space-around;
+           margin:3em 2em;
+
+           .one{
+                white-space: nowrap;
+                
+           }
+           .two{
+            white-space: nowrap;
+            word-spacing: 1em;
+            margin:auto -4em;
+
+            .aa{
+                li{
+
+                    padding-bottom: 1em;
+                }
+            }
+
+            .bb{
+                li{
+                    padding-bottom: 1em;
+                }
+            }
+           }
+
+           p{
+               margin:4em auto;
+               display: none;
+           }
+        }
+    }
+
+    @media screen and(max-width:604px){
+        &{
+            .container{
+                .box{
+                    flex-wrap: wrap;
+                    margin:20em auto;
+
+                    .one{
+                        margin:1em 5em;
+                        width:100%;
+                    }
+                    .two{
+                        margin:4em 5em;
+                        width:100%;
+                    }
+                }
+            }
+        }
+    }
+}

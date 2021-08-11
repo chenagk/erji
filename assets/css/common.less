@@ -1,0 +1,121 @@
+//header
+.header{
+    // position: fixed;
+    // background-color:#111111;
+    background-color:white;
+    padding:1em 0em;
+    position: sticky;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:100000;
+
+    transition:all linear .4s;
+
+    .navbar{
+        background-color:transparent;
+        border:0px;
+        border-radius: 0px;
+        margin: 0;
+
+
+        .navbar-brand{
+            background-color:transparent;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size:2em;
+            a:hover{
+                color:#042957;
+            }
+            
+        }
+
+        .nav{
+            background-color:transparent;
+            a{
+                color:#042957;
+                font-size:1.5em;
+                text-transform: uppercase;
+                border-bottom:3px solid transparent;
+                transition:all linear .3s;
+
+                &:hover{
+                    border-bottom:3px solid #fcac45;
+                    color:#042957;
+                }
+            }
+        }
+    }
+ 
+
+    @media screen and (max-width:768px){
+        &{
+            // opacity: .3;
+            .navbar{
+                .nav{
+                    a{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        
+    }
+    
+}
+
+//footer
+.footer{
+    margin:5em 0em;
+    background:#fff;
+    .container{
+        padding-top:1em;
+        text-align: center;
+    }
+    .one{
+        margin:4em auto;
+        a{
+            color:#042957;
+            font-size: 2em;
+            color:#042957;
+        }
+
+        span{
+            margin:auto 1.2em;
+        }
+    }
+
+    .two{
+        margin:6em auto;
+        width:80%;
+        margin:auto;
+        img{
+            align-self: center;
+            width:200px;
+        }
+    }
+
+    .three{
+        margin:4em auto;
+        p{
+            color:#aab4c1;
+        }
+    }
+
+    @media screen and (max-width:508px){
+        &{
+            .container{
+                .one{
+                    a{
+                        font-size:1.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+    
+    
+
+
+

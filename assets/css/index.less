@@ -1,0 +1,601 @@
+// banner
+.banner{
+    display: flex;
+    margin-right:-5em;
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .left{
+        .diyi{
+            h1{
+                position: relative;
+                font-size:2.5em;
+                font-weight: bold;
+                color:#042957;
+            }
+
+            img{
+                position: absolute;
+                width:40px;
+                right:63%;
+                top:10%;
+            }
+
+            .title{
+                line-height: 50px;@media screen and (max-width:767px){
+                    &{
+            
+                        .container{
+            
+                            .left{
+            
+                                .diyi{
+                                    
+                                    h1{
+                                        font-size: 4em;
+                                    }
+                                    img{
+                                        opacity: 0;
+                                    }
+                                }
+            
+                                .dier{
+                                    font-size: 2em;;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                p{
+                    font-size: 5em;
+                    color:#042956;
+                    height: 50px;
+                    font-weight: bold;
+
+                }
+            }
+
+        }
+
+        .dier{
+           font-size:2em;
+           color:#c0c9da;
+
+
+        }
+
+        .disan{
+            
+            display:inline-block;
+            background:#042956;
+            border-radius: 50px;
+            padding:.7em;
+            margin-top: 2em;;
+            font-size:1em;
+        }
+
+        .disi{
+            margin-left:0em;
+            margin-top:1em;
+            display:inline-block;
+            background:#c3ccd5;
+            border-radius: 50px;
+            padding:.7em;
+            font-size:1em;
+        }
+
+     
+    }
+
+    // .right{
+    //     display:flex；
+            
+        
+    // }
+
+    @media screen and (min-width:1000px){
+        &{
+            .left{
+
+                .title{
+
+                    .disi{
+                        margin:auto 2em;
+                    }
+                }
+                      
+            }      
+            
+        }
+        }
+    
+
+    @media screen and (max-width:780px){
+        &{
+            .left{
+                padding:7em;
+                .dier{
+                    p{
+                        font-size:.3em;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:800px){
+        &{
+            .right{
+                  img{
+                    margin:auto -4em;
+                }
+            }
+        }
+    }
+
+
+}    
+    
+// 天籁之音
+.tianlai{
+    .container{
+        padding:0;
+        .bg{
+            background-image: url(../images/tlbg.png);
+            background-size:cover;
+            width:100%;
+            height:500px;
+
+            .title{
+                display: flex;
+                justify-content: center;
+     
+                 h1{
+                     margin:5em auto;
+                     font-size:3.3em;
+                     color:#042957;
+                     font-weight: bold;
+                 }
+             }
+        }
+        
+    }
+
+
+        @media screen and (max-width:766px){
+            
+        }
+}
+
+// 技术
+.technogly{
+        .container{
+            display: flex; 
+        }
+
+    .left9{
+        margin:-3em 6em;
+        width: 48%;
+        flex-wrap: nowrap;
+        img{
+            width:33%;
+        }
+
+    }
+
+    .right9{
+        width:48%;
+
+        .box1{
+            margin:3em auto;
+        }
+        span{
+            display: inline-block;
+            color:#042957;
+            font-size:2.5em;
+            font-weight: bold;
+            letter-spacing: 10px;
+        }
+
+        .box2{
+            color:#98a3b0;
+            font-size:1.5em;
+            margin-top:1em;
+        }
+        
+        a{
+            font-size:1.5em;
+            border:1px solid blue;
+            background:#042957;
+            color:#fff;
+            border-radius:50px;
+            margin-top:1.5em;
+            padding:20px;
+        }
+       
+    }
+
+    @media screen and (max-width:760px){
+        &{
+
+            .container{
+
+                .left9{
+                    img{
+                        width: 130px;
+                    }
+                }
+                
+                .right9{
+                    
+                    .box1{
+
+                        span{
+                            font-size: 2em;
+                        }
+                    }
+
+                    .box2{
+                        font-size:1em;
+                    }
+
+                    a{
+                        font-size:1em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//降噪
+.jiangzao{
+
+    .container{
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: #edf0f5;
+        
+        div{
+            width: 50%;
+
+        }
+
+        .one{
+            width:50%;
+            h1{
+                text-align: center;
+                font-size: 2em;
+                font-weight:bold;
+                color:#042957;
+            }
+            p{
+                text-align: center;
+                font-size:1em;
+                color:#9ba6b5;
+            }
+        }
+
+        .two{
+            img{
+                width:100%;
+            }
+        }
+
+        .three{
+            img{
+                width:100%;
+            }
+        }
+
+        .four{
+            width:50%;
+            h1{
+                text-align: center;
+                font-size: 2em;
+                font-weight:bold;
+                color:#042957;
+            }
+            p{
+                text-align: center;
+                font-size:1em;
+                color:#9ba6b5;
+            }
+        }
+
+        .five{
+            width:50%;
+            h1{
+                text-align: center;
+                font-size: 2em;
+                font-weight:bold;
+                color:#042957;
+            }
+            p{
+                text-align: center;
+                font-size:1em;
+                color:#9ba6b5;
+            }
+        }
+
+        .six{
+            img{
+                width:100%;
+            }
+        }
+    }
+}
+
+// 技术参数
+.technical_parameter{  
+    display:flex;
+    justify-content: center;
+    width:100%;
+    .first{
+        margin:50px auto;
+        color:#042957;
+
+        h1{
+            font-size:4em;
+        }
+    }
+    .second{
+        position: relative;
+        display: flex;
+        // justify-content: space-between;
+        .list1{
+            font-size:1.5em;
+            width: 23%;
+            color:#8794a5;
+
+            li{
+                margin:.7em auto;
+            }
+
+        }
+
+        .list2{
+            font-size:1.5em;
+            width: 23%;
+            color:#8794a5;
+            margin-left: 2em;
+            li{
+                margin:.7em auto;
+            }
+        }
+    }
+    .third{
+        width:50%;
+        position: absolute;
+        left:400px;
+        top:71px;
+        
+        img{
+            width:80%;
+            margin:5em 17em;
+            
+        }
+    }
+       
+
+
+    @media screen and (max-width:768px){
+        &{
+            .first{
+                h1{
+                   text-align: center;
+                }
+            }
+
+            .second{
+                flex-wrap: wrap;
+                .list1{
+                    flex-wrap: wrap;
+                    width: 100%;
+                    // text-align: center;
+                }
+
+                .list2{
+                    flex-wrap: wrap;
+                    width: 100%;
+                    // text-align: center;
+                    margin-left: 0px;
+                }
+
+
+            }
+            .third{
+                width:50%;
+                position: absolute;
+                left:400px;
+                top:71px;
+                
+                img{
+                    width:80%;
+                    margin:-4em -9em;
+                    
+                }
+            }
+        }
+    }
+
+    
+}
+
+//比特斯
+.bitesi{
+    .content{
+        display: flex;
+        justify-content: space-between;
+
+        .left{
+            img{
+                width:66%;
+                margin:9em 6em;
+            }
+        }
+
+        .right{
+            margin:16em 11em;
+            white-space: nowrap;
+
+            h1{
+                font-size:4em;
+                color:#042957;
+                font-weight: bold;
+            }
+
+            span{
+                display: inline-block;
+                font-size:2em;
+                color:#8794a5;
+            }
+
+            p{
+                font-size:3em;
+                color:red;
+            }
+
+            .buy{
+                display: inline-block;
+                background-color:#042957;
+                border-radius: 50px;
+                padding:1em 1em;
+                margin:3em auto;
+
+                a{
+                    color:white;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:700px){
+
+        &{
+
+            .content{
+
+                .right{
+
+                    .top{
+                       
+                        h1{
+                            font-size:2em;
+                        }
+
+                        span{
+                            font-size:1em;
+                        }
+
+                        p{
+                            font-size:1em;
+                        }
+                    }
+
+                    .buy{
+
+                        a{
+                            font-size:.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:562px){
+
+        &{
+
+            .content{
+
+                .right{
+                    margin:7em 11em;
+                    .top{
+                       
+                        h1{
+                            font-size:1em;
+                        }
+                    }
+
+                    .buy{
+                        
+                            a{
+                                font-size:10px;
+                            }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 加入我们
+.join{
+    .container{
+        .bg{
+            background-image: url(../images/join.png);
+            background-size: cover;
+            width:100%;
+            height:500px;
+            display: flex;
+            justify-content: center;
+
+            .email{
+            
+                margin:15em auto;
+
+                h1{
+                    font-size:1.5em;
+                    color:white;
+                    font-weight: bold;
+                }
+    
+                p{
+                    font-size:1em;
+                    color:white;
+                }
+    
+                input{
+                    background-color: transparent;
+                    border:0;
+                    border-bottom: 2px white solid;
+                    margin:2em auto;
+                    opacity: .5;
+                }
+            }
+        }
+
+        
+        
+        // .join .container .email h1
+        @media screen and (max-width:767px){
+            &{
+                .email{
+                    margin:auto -3em;
+                    h1{
+                        font-size:1em;
+                    }
+
+                    p{
+                        font-size:.5em;
+                    }
+
+                    input{
+                        margin:1em auto;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+
+
+
