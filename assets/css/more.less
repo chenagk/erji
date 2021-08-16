@@ -77,11 +77,6 @@
         padding-right:0;
         width:100%; 
         position: relative;
-
-        img{
-            
-            width:100%;
-        }
       
         .content{
             width:55%;
@@ -112,9 +107,9 @@
                 button{
                     position: absolute;
                     top:-3px;
-                    left:36em;
+                    left:35em;
                     border-radius: 25px;
-                    padding:1em 3em;
+                    padding:1em 1em;
                     background-color: #4c92d0;
                     color:white;
                 }
@@ -161,9 +156,9 @@
                            padding:.5em .5em;
                        }
                        button{
-                           margin:auto -22em;
+                           margin:1px -22em;
                             white-space: nowrap;
-                            padding:.5em .5em;
+                            padding:.4em .4em;
                             background-color: #4c92d0;
                        }
                     }
@@ -172,7 +167,7 @@
         }
     }
 
-    @media screen and (max-width:540px){
+    @media screen and (max-width:649px){
         &{
             .container{
                 .content{
@@ -184,13 +179,37 @@
                             margin:auto -2em;
                         }
                         button{
-                           margin:3em -34em;
+                            padding:.3em .3em;
+                           margin:3px -24em;
                         }
                     }
                 }
             }
         }
     }
+
+    @media screen and (max-width:564px){
+        &{
+            .container{
+                .content{
+                    .text1{
+
+                    }
+                    .text2{
+                        input{
+                            margin:auto -2em;
+                        }
+                        button{
+                            padding:.3em .3em;
+                            margin:3px -27em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
 
    
 
@@ -301,27 +320,20 @@
 //视频部分
 .video{
     .container{
-        margin:3em auto;
-        .bg{
-            width:100%;
-            height:461px;
-            background-image: url(../images/video.png);
-
-        }
-
+        width:1270px;
+        margin:0;
+        padding:0;
         .box{
             
-
             .left{
-                margin:-24em 11em;
+                margin:-20em 11em;
                
                 
             }
 
             .right{
-
                 width:450px;
-                margin:6em 44em;
+                margin:0em 44em;
                 h1{
                     font-size:2em;
                 }
@@ -330,7 +342,7 @@
                 }
                 
                 a{
-                    margin:1em auto;
+                    // margin:1em auto;
                     padding:1em 1em;
                     background-color: white;
                     color:black;
@@ -385,11 +397,11 @@
                 .box{
                     .left{
                         video{
-                           margin:-6em 4em;
+                           margin:-3em 4em;
                         }
                     }
                     .right{
-                        margin:32em 15em;
+                        margin:24em 15em;
                         width:300px;
                         height:100px;
                         h1{
@@ -397,7 +409,10 @@
                         }
                         p{
                             font-size:.7em;
+                            
+                           
                         }
+                        
                     }
                 }
             }
@@ -557,16 +572,17 @@
     @media screen and(max-width:604px){
         &{
             .container{
+                margin:18em auto;
                 .box{
                     flex-wrap: wrap;
-                    margin:20em auto;
+                    // margin:20em auto;
 
                     .one{
                         margin:1em 5em;
                         width:100%;
                     }
                     .two{
-                        margin:4em 5em;
+                        margin:2em 6em;
                         width:100%;
                     }
                 }
