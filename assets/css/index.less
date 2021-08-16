@@ -3,8 +3,14 @@
     display: flex;
     margin-right:-5em;
     .container{
-        display: flex;
-        justify-content: space-between;
+        // display: flex;
+        // justify-content: space-between;
+        
+        .box{
+           
+
+            
+        }
     }
     .left{
         .diyi{
@@ -142,26 +148,64 @@
 // 天籁之音
 .tianlai{
     .container{
-        width:1274px;
+        // width:1274px;
         margin:0;
         padding:0;
-
-        .content{
+        width:100%;
+        .box{
             position: relative;
+            img{
+                width:100%;
+            }
+
             h1{
                 position: absolute;
-                font-size: 3em;
+                text-align: center;
+                margin:-7em 7em;
+                white-space: nowrap;
+                font-size:4em;
+                letter-spacing: 20px;
                 color:blue;
-                margin:-7em 11em;
             }
         }
         
-        
     }
+        @media screen and (max-width:1000px){
+            &{
+                .container{
+                    .box{
+                        h1{
+                            position:absolute;
+                            font-size:3em;
+                        }
+                    }
+                }
+            }
+        }
 
+        @media screen and (max-width:918px){
+            &{
+                .container{
+                    .box{
+                        h1{
+                            font-size:2em;
+                        }
+                    }
+                }
+            }
+        }
 
-        @media screen and (max-width:766px){
-            
+        @media screen and (max-width:688px){
+            &{
+                .container{
+                    .box{
+                        h1{
+                            font-size:1em;
+                            margin:-10em 10em;
+                        }
+                    }
+                }
+            }
         }
 }
 
@@ -532,61 +576,83 @@
 
 // 加入我们
 .join{
-    position: relative;
     .container{
-        width:1274px;
-        padding:0;
+        width:100%;
         margin:0;
+        padding:0;
+
+        .box1{
+            img{
+                width:100%;
+            }
+        }
 
             .email{
                 position: relative;
                 margin:-17em 38em;
                 h1{
+                    position: absolute;
                     font-size:1.5em;
                     color:white;
                     font-weight: bold;
+                    margin:-3em auto;
+                    white-space: nowrap;
                 }
     
                 p{
-                  
+                    position: absolute;
                     font-size:1em;
                     color:white;
+                    margin:-1em auto;
+                    white-space: nowrap;
                 }
     
                 input{
-                  
+                    position: absolute;
                     background-color: transparent;
                     border:0;
                     border-bottom: 2px white solid;
-                    margin:2em auto;
+                    // margin:2em auto;
                     opacity: .5;
+                    margin:3em auto;
                 }
             }
-        
-
-        
-        
-        // .join .container .email h1
-        // @media screen and (max-width:767px){
-        //     &{
-        //         .email{
-        //             margin:auto -3em;
-        //             h1{
-        //                 font-size:1em;
-        //             }
-
-        //             p{
-        //                 font-size:.5em;
-        //             }
-
-        //             input{
-        //                 margin:1em auto;
-        //             }
-        //         }
-        //     }
-        // }
+    }
+    @media screen and (max-width:1105px){
+        &{
+            .container{
+                .email{
+                    margin:-10em 30em;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:888px){
+        &{
+            .container{
+                .email{
+                    margin:-9em 21em;
+                }
+            }
+        }
     }
 
+    @media screen and (max-width:688px){
+        &{
+            .container{
+                .email{
+                    margin:-6em 7em;
+
+                    h1{
+                        font-size: 1em;
+                    }
+                    p{
+                        font-size: .6em;
+                    }
+                }
+            }
+        }
+    }
     
 }
 

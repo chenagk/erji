@@ -132,9 +132,12 @@
 .endow{
     .container{
         position: relative;
-        width:1270px;
+        width:100%;
         margin:0;
         padding:0;
+        img{
+            width:100%;
+        }
             .box{
                 position: absolute;
                 text-align: center;
@@ -152,6 +155,7 @@
                     font-weight: bold;
                     color:#fff;
                     letter-spacing:10px;
+                    white-space: nowrap;
                 }
                 .three{
                     color:#fff;
@@ -168,27 +172,33 @@
         
     }
 
-    // @media screen and (max-width:1000px){
-    //     &{
-    //         .container{
-    //             .box{
-    //                 margin:-3em -1em;;
-    //                 span{
-    //                     font-size:1em;
-    //                 }
-    //                 h1{
-    //                     font-size: 1em;
-    //                 }
-    //                 p{
-    //                     font-size:1em;
-    //                 }
-    //                 a{
-    //                     font-size:1em;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
+    @media screen and (max-width:1000px){
+        &{
+            .container{
+                .box{
+                    margin:-35em 19em;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:800px){
+        &{
+            .container{
+                .box{
+                    margin:-26em 9em;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:600px){
+        &{
+            .container{
+                .box{
+                    margin:-22em 2em;
+                }
+            }
+        }
+    }
 }
 
 // 公司新闻
@@ -248,108 +258,91 @@
 //联系我们
 .contact{
     .container{
-        .bg{
-            background-image: url(../images/contact.jpg);
-            background-size: cover;
+        width:100%;
+        padding:0;
+        margin:0;
+        img{
             width:100%;
-            height:50vh;
+        }
 
-            .box{
-                // width:55%;
-                // position: absolute;
-                // top:25%;
-                // left:25%;
-                text-align:center;
+        .box{
+            text-align:center;
+            margin:-45em 3em;
 
 
-                .one{
-                    margin:2em auto;
-                    color:white;
-                    h1{
-                        font-size:3em;
-                        letter-spacing: 20px;
-                    }
+            .one{
+                margin:2em auto;
+                color:white;
+                h1{
+                    font-size:3em;
+                    letter-spacing: 20px;
+                }
 
                     span{
                         font-size:2em;
                     }
-                
                 }
 
-                .two{
+            .two{
                     // margin:3em auto;
                     display: flex;
                     justify-content: center;
-                    width:100%;
+   
                     li{
                         margin:auto 1em;
                         list-style: none;
-
                     }
-                    a{
-                    font-size:1.5em;
-                    padding:auto 7em;
-                    
+                        a{
+                        font-size:1.5em;
+                        padding:auto 7em;
                     }
                     
                 }
 
-                .three{
-                    margin:4em auto;
-                    font-size:1.5em;
-                }
+            .three{
+                margin:4em auto;
+                font-size:1.5em;
+            }
+        }
+    }       
+   
 
-               }       }
-}   
-
-    @media screen and (max-width:1000px){
+    @media screen and (max-width:1036px){
         &{
             .container{
                 .box{
-                    text-align: center;
-                    .one{
-                        h1{
-                            font-size:1.5em;
-                        }
-
-                        span{
-                            font-size:1.5em;
-                        }
-                    }
-                    .two{
-                        
-                        li{
-                            a{
-                                font-size:.4em;
-                                white-space: nowrap;
-                            }
-                        }
-                        
-                    }
-                    
-                    .three{
-                        font-size:1em;
-                    }
-                }
+                    margin:-30em 3em;
+                } 
             }
         }
     }
 
-    @media screen and (max-width:800px){
+    @media screen and (max-width:683px){
         &{
             .container{
-                .bg{
                     .box{
+                        margin:-22em 3em;
+                      .one{
+                          h1{
+                              font-size:2.2em;
+                          }
+                          span{
+                              font-size: 1em;
+                          }
+                        }
+
                         .two{
-                            li{
-                                font-size:.7em;
+                            a{
+                                font-size:.8em;
                             }
                         }
                         .three{
-                            font-size:.7em;
+                            p{
+                                font-size:.8em;
+                            }
                         }
                     }
-                }
+                
             }
         }
     }

@@ -73,11 +73,14 @@
 .banner{
     
     .container{
-        padding-left:0;
-        padding-right:0;
+        margin:0;
+        padding:0;
         width:100%; 
         position: relative;
       
+        img{
+            width:100%;
+        }
         .content{
             width:55%;
             position: absolute;
@@ -320,9 +323,12 @@
 //视频部分
 .video{
     .container{
-        width:1270px;
+        width:100%;
         margin:0;
         padding:0;
+        img{
+            width:100%;
+        }
         .box{
             
             .left{
@@ -333,7 +339,7 @@
 
             .right{
                 width:450px;
-                margin:0em 44em;
+                margin:3em 44em;
                 h1{
                     font-size:2em;
                 }
@@ -343,7 +349,7 @@
                 
                 a{
                     // margin:1em auto;
-                    padding:1em 1em;
+                    padding:.5em .5em;
                     background-color: white;
                     color:black;
                     border-radius: 25px;
@@ -352,11 +358,16 @@
         }
     }
 
-    @media screen and (max-width:1206px){
+    @media screen and (max-width:1004px){
         &{
             .container{
                 .box{
-                    margin:auto -11em;
+                   .left{
+                    margin:-18em 11em;
+                   }
+                   .right{
+                       margin:2em 44em;
+                   }
                     
                    
                 }
@@ -364,19 +375,19 @@
         }
     }
 
-    @media screen and (max-width:993px){
+    @media screen and (max-width:990px){
         &{
             .container{
                 .box{
                     .left{
                         video{
-                            margin:0em 4em;
+                            margin:4em 2em;
                             width:200px;
                             height:180px;
                         }
                     }
                     .right{
-                        margin:12em 34em;
+                        margin:2em 34em;
                         width:300px;
                         height:100px;
                         h1{
@@ -391,19 +402,49 @@
         }
     }
 
-    @media screen and (max-width:700px){
+    @media screen and (max-width:702px){
         &{
             .container{
                 .box{
                     .left{
                         video{
-                           margin:-3em 4em;
+                           margin:-17em -6em;
                         }
                     }
                     .right{
-                        margin:24em 15em;
+                        margin:24em 22em;
                         width:300px;
                         height:100px;
+                        h1{
+                            font-size:1.2em;
+                        }
+                        p{
+                            font-size:.7em;
+                            
+                           
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:660px){
+        &{
+            .container{
+                .box{
+                    .left{
+                        video{
+                            width:170px;
+                            height:130px;
+                           margin:-17.5em -10em;
+                        }
+                    }
+                    .right{
+                        margin:26em 14em;
+                        width:300px;
+                        height:80px;
                         h1{
                             font-size:1.2em;
                         }
